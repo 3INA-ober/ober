@@ -17,7 +17,7 @@ public class TriangoloScaleno {
     
     public float calcolaPerimetro (){
         float perimetro ;
-        perimetro = lato1 + lato2 + lato3 ;
+        perimetro = lato1 + lato2 + lato3;
         return perimetro;
 }
     public float calcolaArea (){
