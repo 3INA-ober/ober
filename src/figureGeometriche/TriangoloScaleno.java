@@ -1,7 +1,6 @@
 
 package figureGeometriche;
 
-
 public class TriangoloScaleno {
    public float lato1;
    public float lato2;
