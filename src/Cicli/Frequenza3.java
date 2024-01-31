@@ -11,25 +11,21 @@ public class Frequenza3 {
         
         Random r = new Random();
         
-        String testo = "N. -FA -   FR    - FP\n" ;
+        String testo = "N.      -FA -      FR       - FP\n" ;
         
         int totNumeri = 100000;
         int nNumeri = 9;
         int contatore = 0;
           
-        int differenza = totNumeri;
         
         for (int i = 1; i <= nNumeri; i++){
-            if (i < nNumeri)
-                contatore = r.nextInt(differenza);
-            else
-                contatore = differenza;
+                contatore = r.nextInt(totNumeri);
+            
             double fR = (double)contatore/totNumeri;
             double fP = fR*100;
             
             f.format("%d    %2d    %4.2f    %5.2f\n", i, contatore, fR , fP);
-            
-            differenza -=contatore;      
+                  
         }                              
         
         testo += f;
