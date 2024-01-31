@@ -120,7 +120,7 @@ public class Meteo {
         if (temperatura > 25) {
             testo = "condizionatore a manetta!";
         }
-        return testo;s
+        return testo;
         
     }
 
@@ -145,4 +145,8 @@ public class Meteo {
             testo = "basta il piumino!";
             
         } else if (temperatura > 10 && temperatura <= 15) {
-         
+            
+        }
+        return testo; 
+    }
+}

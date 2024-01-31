@@ -29,6 +29,6 @@ public class Menu {
     public void setNumeroLati(int numeroLati) {
         this.numeroLati = numeroLati;
     }
-    
-    public 
 }
+    
+    
