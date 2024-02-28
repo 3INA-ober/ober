@@ -4,6 +4,13 @@ public class Calendar {
 
     static String Zellercongruence(int day, int month, int year) {
         String ret = "";
+
+        if (month < 3 && month > 0) {
+            month = month + 12;
+            year--;
+        }
+
+        /*
         if (month == 1) {
             month = 13;
             year--;
@@ -12,6 +19,8 @@ public class Calendar {
             month = 14;
             year--;
         }
+         */
+        
         int q = day;
         int m = month;
         int k = year % 100;
@@ -26,7 +35,7 @@ public class Calendar {
                 ret = ("Sunday");
                 break;
             case 2:
-               ret = ("Monday");
+                ret = ("Monday");
                 break;
             case 3:
                 ret = ("Tuesday");
@@ -41,8 +50,6 @@ public class Calendar {
                 ret = ("Friday");
                 break;
         }
-       return ret; 
+        return ret;
     }
 }
-
-
