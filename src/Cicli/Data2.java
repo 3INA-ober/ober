@@ -4,25 +4,20 @@ package Cicli;
  *
  * @author david.ober
  */
-public class Data {
+public class Data2 {
 
     private int g;
     private int m;
     private int a;
-    private int giorno;
-    private int mese;
-    private int anno;
 
-    public Data() {
+    public Data2() {
+        
     }
 
-    public Data(int g, int m, int a, int giorno, int mese, int anno) {
+    public Data2(int g, int m, int a) {
         this.g = g;
         this.m = m;
         this.a = a;
-        this.giorno = giorno;
-        this.mese = mese;
-        this.anno = anno;
     }
 
     

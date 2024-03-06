@@ -1,33 +1,37 @@
 package Cicli;
 
-public class SuperEnalottoArray {
+import java.util.Random;
 
-    int numeri[] = new int[6];
-    int n1;
-    int n2;
+public class SuperEnalottoArray {
 
     public SuperEnalottoArray() {
     }
 
-    public String generatore() {
-        String testo = "";
-        int i = 0;
-        for (i = 0; i < 6; i++) {
-            numeri[i] = (int) (Math.random() * 99) + 1;
-        testo += numeri[i];  
+    public int[] superEnalotto() {
+        int[] n = new int[6];
+        int ris;
+        Random r = new Random();
+        for (int i = 0; i <= n.length; i++) {
+            ris = (int) r.nextInt(9) + 1;
+            n[i] = ris;
         }
-        return testo;
+
+        return n;
     }
 
-    public String confronto() {
-        String testo= "";
+    public int[] superEnalottoNoNumeriRipetuti() {
+        int[] numeri = new int[6];
         int i = 0;
-        for (i = 0; i < 6; i++){
-            
-            
-        }
-        
-        return testo;
-        
+        Random r = new Random();
+        do {
+            numeri[i] = r.nextInt(99) + 1;
+            i++;
+        } while (numeri[0] == numeri[1] || numeri[0] == numeri[2] || numeri[0] == numeri[3] || numeri[0] == numeri[4] || numeri[0] == numeri[5]
+                || numeri[1] == numeri[2] || numeri[1] == numeri[3] || numeri[1] == numeri[4] || numeri[1] == numeri[5]
+                || numeri[2] == numeri[3] || numeri[2] == numeri[4] || numeri[2] == numeri[5]
+                || numeri[3] == numeri[4] || numeri[3] == numeri[5]
+                || numeri[4] == numeri[5] || numeri[5] == 0);
+
+        return numeri;
     }
 }

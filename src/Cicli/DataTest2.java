@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author david.ober
  */
-public class DataTest {
+public class DataTest2 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class DataTest {
         a = in.nextInt();
         
         Data2 d = new Data2(g,m,a);
-        
+ 
         System.out.println(d.isBisestile());
         System.out.println("La data del giorno pre stabilito è: " +d.info());
 
