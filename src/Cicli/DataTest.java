@@ -14,6 +14,9 @@ public class DataTest {
         int g;
         int m;
         int a;
+        int giorno;
+        int mese;
+        int anno;
 
         System.out.println("inserisci il giorno: ");
         g = in.nextInt();
@@ -24,10 +27,22 @@ public class DataTest {
         System.out.println("inserisci l'anno: ");
         a = in.nextInt();
         
-        Data2 d = new Data2(g,m,a);
+         System.out.println("inserisci il giorno: ");
+        giorno = in.nextInt();
+
+        System.out.println("inserisci il mese: ");
+        mese = in.nextInt();
+
+        System.out.println("inserisci l'anno: ");
+        anno = in.nextInt();
+        
+        Data d = new Data(g,m,a,giorno,mese,anno);
         
         System.out.println(d.isBisestile());
         System.out.println("La data del giorno pre stabilito è: " +d.info());
+        System.out.println("La data della seconda data pre stabilita è: " +d.info2());
+        
+        System.out.println("la distanza dei giorni tra le due date è: "+d.distanzaGiorni());
 
     }
 
